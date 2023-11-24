@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.title("This is our forecast plataform")
+st.title("This is our forecast platform")
