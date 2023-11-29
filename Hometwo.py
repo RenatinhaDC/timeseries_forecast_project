@@ -20,17 +20,6 @@ def forecast_sales(ts_data, num_periods):
     forecast_periods = num_periods * 4  
     forecast = arima_model.predict(n_periods=forecast_periods)
 
-    # Measure accuracy on the validation data
-    mae = mean_absolute_error(validation_data, forecast)
-    mse = mean_squared_error(validation_data, forecast)
-    rmse = np.sqrt(mse)
-    percentage_error = np.mean(np.abs((validation_data - forecast) / validation_data)) * 100
-
-    st.write(f'Mean Absolute Error: {mae}')
-    st.write(f'Mean Squared Error: {mse}')
-    st.write(f'Root Mean Squared Error: {rmse}')
-    st.write(f'Percentage Error: {percentage_error}%')
-
     # Visualize actual vs. forecast with training and validation data
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.plot(train_data.index, train_data, label='Training Data', linewidth=2)
