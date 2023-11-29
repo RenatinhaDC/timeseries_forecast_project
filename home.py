@@ -67,3 +67,17 @@ st.write("""
     }
 </style>
 """, unsafe_allow_html=True)
+
+
+
+about = st.container()
+with about:
+    st.title("Who are we?")
+
+    # Set team image and resize it
+    #image = Image.open('Team logo/MicrosoftTeams-image (2).jpg.png')
+    #new_size = (1080, 722)
+    #resized_image = image.resize(new_size)
+    #st.image(resized_image)
+
+    # Add information about the team members (as described in your code)
