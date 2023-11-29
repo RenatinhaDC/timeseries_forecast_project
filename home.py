@@ -35,3 +35,35 @@ st.write('<div class="slide-in-animation">This app is using ARIMA model to forec
 
 #add a sidebar to select pages
 st.sidebar.success("Select a page above.")
+
+subheader_container = st.container()
+
+subheader_content = """
+<div class="slide-in-animation">
+<h3>What should you expect:</h3>
+<ul>
+  <li>Forecast Sales of 45 Walmart Stores</li>
+  <li>View the dataset and interact with a visual showing sales across stores</li>
+  <li>Get to know more about the team</li>
+</ul>
+</div>
+"""
+
+subheader_container.markdown(subheader_content, unsafe_allow_html=True)
+
+# Add CSS for animation
+st.write("""
+<style>
+    @keyframes slide-in {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .slide-in-animation {
+        animation: slide-in 1.5s ease;
+    }
+</style>
+""", unsafe_allow_html=True)
