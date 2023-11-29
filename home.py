@@ -10,7 +10,7 @@ st.set_page_config(
 st.markdown("# 👋 Welcome To Walmart Sales Forecasting App ")
 
 # Display the waving GIF
-st.image("https://www.animatedimages.org/data/media/1645/animated-waving-image-0090.gif")
+st.image("https://www.animatedimages.org/img-animated-cat-image-0516-58883.htm")
 
 # Add CSS for animation
 st.write("""
