@@ -1,3 +1,5 @@
+import streamlit as st
+
 st.set_page_config(
     page_title="Welcome To Sales Forecasting  Walmart App",
     page_icon="😃",
